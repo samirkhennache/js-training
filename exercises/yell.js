@@ -6,14 +6,13 @@
  *
  */
 
-    const yell =(str) =>{
-        let word ="";
-        for(let i=0; i<str.length; i++)
-            word +=str[i].toUpperCase();  
-        return word;
+    const yell = (str) =>{
+        return str.toUpperCase();
     }
+
 //* Begin of tests
 const assert = require('assert')
-
-assert.fail('You must write your own tests')
+assert.strictEqual(typeof yell, 'function')
+assert.strictEqual(yell('samir'),'SAMIR')
+assert.deepStrictEqual(yell("water"), 'WATER')
 // End of tests */
