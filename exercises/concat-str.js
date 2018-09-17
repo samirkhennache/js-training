@@ -10,7 +10,9 @@
 
 //* Begin of tests
 const assert = require('assert')
-
+const concatStr =(str1,str2) =>{
+    return (str1+str2);
+}
 assert.strictEqual(typeof concatStr, 'function', 'Should be a function')
 assert.strictEqual(concatStr.length, 2, 'Should takes 2 arguments')
 assert.strictEqual(concatStr('a', 'b'), 'ab')

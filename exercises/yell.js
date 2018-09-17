@@ -6,7 +6,12 @@
  *
  */
 
-
+    const yell =(str) =>{
+        let word ="";
+        for(let i=0; i<str.length; i++)
+            word +=str[i].toUpperCase();  
+        return word;
+    }
 //* Begin of tests
 const assert = require('assert')
 

@@ -6,7 +6,13 @@
  *
  */
 
-
+ const sentence = (myArray) =>{
+     let str="";
+    for(let i=0; i<myArray.length-1; i++)
+    str +=myArray[i]+" ";
+    str =str+myArray[myArray.length-1];
+    return str;
+ }
 //* Begin of tests
 const assert = require('assert')
 
