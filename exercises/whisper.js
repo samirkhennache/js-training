@@ -6,10 +6,15 @@
  * and wrapped by `*`
  *
  */
-
+    const lower =(str) =>{
+        return('*'+str.toLowerCase()+'*')
+    }
 
 //* Begin of tests
 const assert = require('assert')
-
-assert.fail('You must write your own tests')
+assert.strictEqual(typeof lower, 'function')
+assert.deepStrictEqual(lower("SAMIR"),"*samir*")
+assert.deepStrictEqual(lower("samir"),"*samir*")
+assert.deepStrictEqual(lower("SamIR et TEst"),"*samir et test*")
+ 
 // End of tests */
